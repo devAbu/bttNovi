@@ -1,0 +1,6 @@
+[12-Jan-2019 14:15:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/bttbh/public_html/delete/deleteTour.php:8) in /home/bttbh/public_html/delete/deleteTour.php on line 18
+[12-Jan-2019 14:15:51 UTC] PHP Warning:  mysqli_query(): Empty query in /home/bttbh/public_html/delete/deleteTour.php on line 15
+[12-Jan-2019 14:15:51 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/bttbh/public_html/delete/deleteTour.php on line 20
+[12-Jan-2019 14:16:07 UTC] PHP Warning:  mysqli_query(): Empty query in /home/bttbh/public_html/delete/deleteTour.php on line 15
+[12-Jan-2019 14:16:07 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/bttbh/public_html/delete/deleteTour.php on line 20
+[12-Jan-2019 14:16:54 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/bttbh/public_html/delete/deleteApartment.php:8) in /home/bttbh/public_html/delete/deleteApartment.php on line 18
