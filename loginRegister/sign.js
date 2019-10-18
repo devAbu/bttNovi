@@ -1,1 +1,76 @@
-$("#alert").slideUp(),$("#signButton").click(function(){$("#alert").removeClass("alert-success").removeClass("alert-danger");var e=$("#firstSign").val(),a=$("#lastSign").val(),l=$("#emailSign").val(),t=$("#passSign").val(),r=$("#numSign").val();""==e?($("#alert").addClass("alert-danger"),$("#alert").html("Your first name is required!!!"),$("#alert").slideDown(500).delay(1e3).slideUp(500)):""==a?($("#alert").addClass("alert-danger"),$("#alert").html("Your last name is required!!!"),$("#alert").fadeIn(500).delay(1e3).fadeOut(500)):""==l?($("#alert").addClass("alert-danger"),$("#alert").html("Email field is required!!!"),$("#alert").fadeIn(500).delay(1e3).fadeOut(500)):/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/.test(l)?""==r?($("#alert").addClass("alert-danger"),$("#alert").html("Please enter your phone number!!!"),$("#alert").fadeIn(500).delay(1e3).fadeOut(500)):""==t?($("#alert").addClass("alert-danger"),$("#alert").html("Password is required!!!"),$("#alert").fadeIn(500).delay(1e3).fadeOut(500)):$.ajax({url:"dbSend/indexSent.php?task=register&firstSign="+e+"&lastSign="+a+"&emailSign="+l+"&passSign="+t+"&numSign="+r,success:function(t){t.indexOf("sent")>-1?($("#alert").addClass("alert-success"),$("#alert").html("Your account created successfully. Please verify your email"),$("#alert").slideDown(500).delay(2e3).slideUp(500),$("#firstSign").val(""),$("#lastSign").val(""),$("#emailSign").val(""),$("#passSign").val(""),$("#numSign").val(""),window.location="http://bttbh.ba/phpSendEmail.php?emailSign="+l+"&firstSign="+e+"&lastSign="+a):($("#alert").addClass("alert-danger"),$("#alert").html("The email is already exists."),$("#alert").slideDown(500).delay(1e3).slideUp(500))},error:function(e,a){$("#alert").addClass("alert-danger"),$("#alert").html("Some problem occured. We are sorry."),$("#alert").slideDown(500).delay(1e3).slideUp(500)}}):($("#alert").addClass("alert-danger"),$("#alert").html("Please enter validated email address."),$("#alert").slideDown(500).delay(1e3).slideUp(500))}),$("#eye").click(function(){var e=$("#passSign").attr("type");console.log(e),"text"==e?$("#passSign").attr("type","password"):"password"==e&&$("#passSign").attr("type","text")});
+$('#alert').slideUp();
+$('#signButton').click(function () {
+    $("#alert").removeClass('alert-success').removeClass('alert-danger');
+    var firstSign = $('#firstSign').val();
+    var lastSign = $('#lastSign').val();
+    var emailSign = $('#emailSign').val();
+    var passSign = $('#passSign').val();
+    var numSign = $('#numSign').val()
+
+    function validateEmail($emailSign) {
+        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        return emailReg.test($emailSign);
+    }
+
+    if (firstSign == "") {
+        $("#alert").addClass('alert-danger');
+        $("#alert").html("Your first name is required!!!");
+        $("#alert").slideDown(500).delay(1000).slideUp(500);
+    } else if (lastSign == "") {
+        $("#alert").addClass('alert-danger');
+        $("#alert").html("Your last name is required!!!");
+        $("#alert").fadeIn(500).delay(1000).fadeOut(500);
+    } else if (emailSign == "") {
+        $("#alert").addClass('alert-danger');
+        $("#alert").html("Email field is required!!!");
+        $("#alert").fadeIn(500).delay(1000).fadeOut(500);
+    } else if (!validateEmail(emailSign)) {
+        $("#alert").addClass('alert-danger');
+        $("#alert").html('Please enter validated email address.');
+        $("#alert").slideDown(500).delay(1000).slideUp(500);
+    } else if (numSign == "") {
+        $("#alert").addClass('alert-danger');
+        $("#alert").html("Please enter your phone number!!!");
+        $("#alert").fadeIn(500).delay(1000).fadeOut(500);
+    } else if (passSign == "") {
+        $("#alert").addClass('alert-danger');
+        $("#alert").html("Password is required!!!");
+        $("#alert").fadeIn(500).delay(1000).fadeOut(500);
+    } else {
+        $.ajax({
+            url: "dbSend/indexSent.php?task=register&firstSign=" + firstSign + "&lastSign=" + lastSign + "&emailSign=" + emailSign + "&passSign=" + passSign + "&numSign=" + numSign,
+            success: function (data) {
+                if (data.indexOf('sent') > -1) {
+                    $("#alert").addClass('alert-success');
+                    $("#alert").html('Your account created successfully. Please verify your email');
+                    $("#alert").slideDown(500).delay(2000).slideUp(500);
+                    $('#firstSign').val("");
+                    $('#lastSign').val("");
+                    $('#emailSign').val("");
+                    $('#passSign').val("");
+                    $('#numSign').val("");
+                    window.location = "http://bttbh.ba/phpSendEmail.php?emailSign=" + emailSign + "&firstSign=" + firstSign + "&lastSign=" + lastSign;
+                } else {
+                    $("#alert").addClass('alert-danger');
+                    $("#alert").html('The email is already exists.');
+                    $("#alert").slideDown(500).delay(1000).slideUp(500);
+                }
+            },
+            error: function (data, err) {
+                $("#alert").addClass('alert-danger');
+                $("#alert").html('Some problem occured. We are sorry.');
+                $("#alert").slideDown(500).delay(1000).slideUp(500);
+            }
+        })
+    }
+});
+$('#eye').click(function () {
+    /* var elementType = $('#passSign').prev().prop('pass'); */
+    var elementType = $('#passSign').attr('type');
+    console.log(elementType);
+    if (elementType == "text") {
+        $('#passSign').attr('type', 'password');
+    } else if (elementType == "password") {
+        $('#passSign').attr('type', 'text');
+    }
+});

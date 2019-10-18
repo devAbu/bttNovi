@@ -32,7 +32,7 @@ if ($_REQUEST['task'] == "request") {
         $price = $_REQUEST['price'];
 
         try {
-    //Server settings
+            //Server settings
             $mail->SMTPDebug = 1;                                 // Enable verbose debug output
             $mail->isSMTP();                                      // Set mailer to use SMTP
             $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
@@ -42,14 +42,14 @@ if ($_REQUEST['task'] == "request") {
             $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587;                                    // TCP port to connect to
 
-    //Recipients
+            //Recipients
             $mail->setFrom('no-reply@btt.ba', 'BTT');
             $mail->addAddress($email);     // Add a recipient
-          // Name is optional
-   
-    //Attachments
-    // Optional name
-    //Content 
+            // Name is optional
+
+            //Attachments
+            // Optional name
+            //Content 
             $mail->isHTML(true);                                  // Set email format to HTML
             $mail->Subject = 'BTT.ba | Tour requested';
             $mail->Body = '
@@ -72,7 +72,6 @@ if ($_REQUEST['task'] == "request") {
 
             //header("location: index");
             $mail->send();
-
         } catch (Exception $e) {
             echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
         }

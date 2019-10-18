@@ -1,1 +1,33 @@
-var obj,dbParam,xmlhttp,x,txt="",i=0,otherPlaces=[];obj={table:"apartment"},dbParam=JSON.stringify(obj),(xmlhttp=new XMLHttpRequest).onreadystatechange=function(){if(4==this.readyState&&200==this.status){var t=JSON.parse(this.responseText);for(x in t)txt+=t[x].title+" ",i++,otherPlaces.push(t[x].title);console.log(otherPlaces),console.log(i),$("#search-loged").autocomplete({source:otherPlaces,select:function(t,e){var o=$("#search-loged").val();console.log(o),console.log("abu"),$("#form").submit()}})}},xmlhttp.open("GET","title/apartTitle.php?x="+dbParam,!0),xmlhttp.send();
+var obj, dbParam, xmlhttp, x, txt = "";
+var i = 0;
+var otherPlaces = []
+obj = {
+    "table": "apartment"
+};
+dbParam = JSON.stringify(obj);
+xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+        //document.getElementById("demo").innerHTML = "All data: " + this.responseText;
+        var myObj = JSON.parse(this.responseText);
+        for (x in myObj) {
+            txt += myObj[x].title + " ";
+            i++;
+            otherPlaces.push(myObj[x].title)
+        }
+        console.log(otherPlaces)
+        console.log(i)
+
+        $("#search-loged").autocomplete({
+            source: otherPlaces,
+            select: function (event, ui) {
+                var search = $('#search-loged').val();
+                console.log(search);
+                console.log('abu')
+                $('#form').submit();
+            }
+        });
+    }
+}
+xmlhttp.open("GET", "title/apartTitle.php?x=" + dbParam, true);
+xmlhttp.send();

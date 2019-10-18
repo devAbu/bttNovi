@@ -1,1 +1,35 @@
-var obj,dbParam,xmlhttp,x,txt="",i=0,otherPlaces=[];obj={table:"tourplan"},dbParam=JSON.stringify(obj),xhr=new XMLHttpRequest,xhr.onreadystatechange=function(){if(4==this.readyState&&200==this.status){var e=JSON.parse(this.responseText);for(x in e)txt+=e[x].title+" ",i++,otherPlaces.push(e[x].title),otherPlaces.push(e[x].type);console.log(otherPlaces),console.log(i),$("#search-loged").autocomplete({source:otherPlaces,select:function(e,t){var o=$("#search-loged").val();console.log(o),console.log("abu"),$("#form").submit()}})}},xhr.open("GET","title/tourTitle.php?x="+dbParam),console.log("OPENED: ",xhr.status),xhr.send();
+var obj, dbParam, xmlhttp, x, txt = "";
+var i = 0;
+var otherPlaces = [];
+obj = {
+    "table": "tourplan"
+};
+dbParam = JSON.stringify(obj);
+xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+        //document.getElementById("demo").innerHTML = "All data: " + this.responseText;
+        var myObj = JSON.parse(this.responseText);
+        for (x in myObj) {
+            txt += myObj[x].title + " ";
+            i++;
+            otherPlaces.push(myObj[x].title);
+            otherPlaces.push(myObj[x].type);
+        }
+        console.log(otherPlaces);
+        console.log(i);
+
+        $("#search-loged").autocomplete({
+            source: otherPlaces,
+            select: function (event, ui) {
+                var search = $('#search-loged').val();
+                console.log(search);
+                console.log('abu');
+                $('#form').submit();
+            }
+        });
+    }
+};
+xhr.open("GET", "title/tourTitle.php?x=" + dbParam); //, true
+console.log('OPENED: ', xhr.status);
+xhr.send();
