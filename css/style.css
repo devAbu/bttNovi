@@ -1,3 +1,4 @@
+body { padding-right: 0 !important }
 .jumbotron {
     background-image: url('../images/jumbotron.jpg');
     background-size: cover;
