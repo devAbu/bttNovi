@@ -118,28 +118,28 @@ session_start();
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="images/slideshow1.jpg" alt="slide1" class="d-block img-fluid">
+                    <img src="images/slideshow1.jpg" alt="slide1" class="d-block img-fluid" id="vh">
                     <div class="carousel-caption">
                         <h3 class="display-4">Mostar</h3>
                         <p>Kravica Waterfall</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/slideshow2.jpg" alt="slide2" class="d-block img-fluid">
+                    <img src="images/slideshow2.jpg" alt="slide2" class="d-block img-fluid" id="vh">
                     <div class="carousel-caption">
                         <h3 class="display-4">Goražde </h3>
                         <p>Osanica River</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/slideshow3.jpg" alt="slide3" class="d-block img-fluid">
+                    <img src="images/slideshow3.jpg" alt="slide3" class="d-block img-fluid" id="vh">
                     <div class="carousel-caption">
                         <h3 class="display-4">Trnovo</h3>
                         <p>Trnovačko Lake</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/slideshow4.jpg" alt="slide4" class="d-block img-fluid">
+                    <img src="images/slideshow4.jpg" alt="slide4" class="d-block img-fluid" id="vh">
                     <div class="carousel-caption">
                         <h3 class="display-4">Bihać</h3>
                         <p>Una River</p>

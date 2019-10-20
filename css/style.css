@@ -475,6 +475,11 @@ footer {
     display: none;
 }
 
+#vh{
+    width: 100vw;
+    height: 72vh;
+}
+
 .pass {
     position: relative;
 }
