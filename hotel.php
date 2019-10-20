@@ -76,7 +76,7 @@ session_start();
             <a href="https://www.facebook.com/tourAgencyBTT/" target="_blank" class="btn btn-lg btn-primary mb-1">
                 <i class="fab fa-facebook mr-2" aria-hidden="true"></i>Facebook</a>
             <div class="align-text-bottom">
-                <a href="#res" id="downArrow"><i class="fa fa-caret-down fa-7x" id="test" style="color: #007BFF; "></i></a>
+            <a href="#res" id="downArrow"><i class="fas fa-chevron-down fa-7x" id="test" style="color: #007BFF;"></i></a>
             </div>
         </div>
     </section>
