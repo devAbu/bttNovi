@@ -26,15 +26,15 @@ a.dropdown-item {
 .navbar-dark .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, 1) !important;
 }
+#navbar{
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+}
 
 .btn-light {
     border: 1px solid #efefef !important;
 }
-.navbar.hide
-{
-    transform: translateY(-100%);
-}
-
 #bg {
     background-image: url('../images/bg.png');
     background-size: cover;
@@ -101,7 +101,7 @@ a.dropdown-item {
 }
 
 .jumbotron5 {
-    background-image: url('../images/places.jpg');
+    background-image: url('../images/ourPlacesbg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -146,7 +146,7 @@ a.dropdown-item {
 }
 
 .bg {
-    background-image: url('../images/aboutUsBG.jpg');
+    background-image: url('../images/aboutUs1.jpg');
     background-size: cover;
     background-position: center;
     /* max-height: 330px;*/
@@ -566,4 +566,11 @@ label.error {
 
 .logo {
     filter: brightness(2.0);
+}   
+
+@media only screen and (max-width: 1255px) {
+    #bestPlaceImg {
+        width: auto;
+        height: auto;
+    }
 }

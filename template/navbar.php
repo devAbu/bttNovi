@@ -284,6 +284,7 @@ session_start();
  
 <script src="./loginRegister/login.js"></script>
 
+<!-- TREBA URADITI DA SE POJAVI NAVBAR KADA SE PRESTANE SKROLATI A NE NA SCROLL UP-->
 <script>
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
