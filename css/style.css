@@ -30,6 +30,10 @@ a.dropdown-item {
 .btn-light {
     border: 1px solid #efefef !important;
 }
+.navbar.hide
+{
+    transform: translateY(-100%);
+}
 
 #bg {
     background-image: url('../images/bg.png');
