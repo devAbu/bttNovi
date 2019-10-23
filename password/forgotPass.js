@@ -23,7 +23,7 @@ $('#logButton').click(function () {
         $("#alertLog").html("Please enter your password!!!");
         $("#alertLog").fadeIn(500).delay(1000).fadeOut(500);
     } else {
-        window.location = "http://bttbh.ba/phpSendEmailForPassword.php?emailLog=" + emailLog + "&passLog=" + passLog
+        window.location = "https://bttbh.ba/phpSendEmailForPassword.php?emailLog=" + emailLog + "&passLog=" + passLog
         $("#alertLog").addClass('alert-success');
         $("#alertLog").html('New password requested');
         $("#alertLog").slideDown(500).delay(1000).slideUp(500);

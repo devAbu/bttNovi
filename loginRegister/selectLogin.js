@@ -17,7 +17,7 @@ $('#selectLogButton').click(function () {
 
                 //window.location("index.php");
 
-                if (window.location.href == "http://bttbh.ba/login.php") {
+                if (window.location.href == "https://bttbh.ba/login.php") {
                     var old = document.referrer;
                     console.log(old);
 

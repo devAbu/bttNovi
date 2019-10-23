@@ -15,9 +15,8 @@ $('#logButton').click(function () {
                 $('#emailLog').val("");
                 $('#passLog').val("");
 
-                //window.location("index.php");
 
-                if (window.location.href == "http://bttbh.ba/login.php") {
+                if (window.location.href == "https://bttbh.ba/login.php") {
                     var old = document.referrer;
                     console.log(old);
 
@@ -25,6 +24,8 @@ $('#logButton').click(function () {
                     /* if (arr != null) { // Did it match?
                         alert(arr[1]);
                     } */
+
+                    console.log(arr)
                     setTimeout(function () {
                         if (arr != null) {
                             window.location.replace("index.php");

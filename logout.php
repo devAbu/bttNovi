@@ -4,7 +4,7 @@ session_start();
 $_SESSION['url'] = $_SERVER['HTTP_REFERER'];
 //$_SESSION['url'] = $_SERVER['REQUEST_URI'];
 if (isset($_SESSION['url'])) {
-    if ($_SESSION['url'] != 'http://bttbh.ba/myCart.php')
+    if ($_SESSION['url'] != 'https://bttbh.ba/myCart.php')
         $url = $_SESSION['url'];
     else
         $url = "index.php";
@@ -15,4 +15,3 @@ if (isset($_SESSION['url'])) {
 session_destroy();
 header("location: ". $url);
 //echo "<script>location='".$url."'</script>";
-?>

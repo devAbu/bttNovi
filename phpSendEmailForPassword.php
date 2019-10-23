@@ -29,13 +29,13 @@ try {
     //Recipients
     $mail->setFrom('no-reply@btt.ba', 'BTT');
     $mail->addAddress($emailLog);     // Add a recipient
-          // Name is optional
+    // Name is optional
     /* $mail->addReplyTo('info@example.com', 'Information');
     $mail->addCC('cc@example.com');
     $mail->addBCC('bcc@example.com');
      */
     //Attachments
-     /*$mail->addAttachment('/var/tmp/file.tar.gz');           // Add attachments
+    /*$mail->addAttachment('/var/tmp/file.tar.gz');           // Add attachments
     $mail->addAttachment('images/icon.png', 'BTT logo');  */ // Optional name
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
@@ -44,7 +44,7 @@ try {
     <center>
         <div style="font-size: 20px; left:50%">
             There is a request from your account for changing the password, if it was You, please click on link below to verify password changing<br>
-            http://bttbh.ba/verifyPassword.php?email=' . $emailLog . '&password=' . $passLog . '
+            https://bttbh.ba/verifyPassword.php?email=' . $emailLog . '&password=' . $passLog . '
         </div>
     </center> 
     <div style="color: red; font-size: 16px; margin-top: 10px;">
@@ -57,7 +57,7 @@ try {
 
     $_SESSION[' url '] = $_SERVER[' HTTP_REFERER '];
     if (isset($_SESSION[' url '])) {
-        if ($_SESSION[' url '] != ' http://bttbh.ba/myCart.php')
+        if ($_SESSION[' url '] != ' https://bttbh.ba/myCart.php')
             $url = $_SESSION['url'];
         else
             $url = "index.php";
@@ -68,7 +68,6 @@ try {
 
     header("location:" . $url);
     $mail->send();
-
 } catch (Exception $e) {
     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
 }

@@ -49,7 +49,7 @@ $('#signButton').click(function () {
                     $('#emailSign').val("");
                     $('#passSign').val("");
                     $('#numSign').val("");
-                    window.location = "http://bttbh.ba/phpSendEmail.php?emailSign=" + emailSign + "&firstSign=" + firstSign + "&lastSign=" + lastSign;
+                    window.location = "https://bttbh.ba/phpSendEmail.php?emailSign=" + emailSign + "&firstSign=" + firstSign + "&lastSign=" + lastSign;
                 } else {
                     $("#alert").addClass('alert-danger');
                     $("#alert").html('The email is already exists.');

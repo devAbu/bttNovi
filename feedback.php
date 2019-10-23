@@ -68,10 +68,23 @@ session_start();
             <p class="text-primary h5 mb-3">Also, you can leave your feedback on:</p>
             <a href="https://www.instagram.com/bosnian_tourist_travel/" target="_blank" class="btn btn-lg btn-primary mb-1"><i class="fab fa-instagram mr-2" aria-hidden="true"></i>Instagram</a>
             <a href="https://www.facebook.com/tourAgencyBTT/" target="_blank" class="btn btn-lg btn-primary mb-1"><i class="fab fa-facebook mr-2" aria-hidden="true"></i>Facebook</a>
+            <div class="align-text-bottom">
+                <a href="#res" id="downArrow"><i class="fas fa-chevron-down fa-7x" id="test" style="color: #007BFF;"></i></a>
+            </div>
         </div>
     </section>
 
-    <section>
+    <script>
+        $('#downArrow').click(function() {
+            event.preventDefault();
+            var sectionTo = $(this).attr('href');
+            $('html').animate({
+                scrollTop: $(sectionTo).offset().top - 40
+            }, 1000);
+        });
+    </script>
+
+    <section id="res">
         <?php
         if (isset($_SESSION["email"])) {
             echo '

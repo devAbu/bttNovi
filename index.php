@@ -102,10 +102,23 @@ session_start();
                     <i class="fas fa-suitcase fa-3x mr-3 mt-md-4 mt-2"></i><span id="indexTour">Choose a tour</span>
                 </a>
             </div>
+            <div class="align-text-bottom">
+                <a href="#res" id="downArrow"><i class="fas fa-chevron-down fa-7x" id="test" style="color: #007BFF;"></i></a>
+            </div>
         </div>
     </section>
 
-    <section class="hidden">
+    <script>
+        $('#downArrow').click(function() {
+            event.preventDefault();
+            var sectionTo = $(this).attr('href');
+            $('html').animate({
+                scrollTop: $(sectionTo).offset().top - 50
+            }, 1000);
+        });
+    </script>
+
+    <section class="hidden" id="res">
         <!--TODO: iz baze slike-->
         <h2 class="display-4 text-center text-primary">BTT</h2>
         <p class="text-center h4 text-primary mb-5">The beauty of Bosnia & Herzegovina</p>

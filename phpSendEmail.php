@@ -30,13 +30,13 @@ try {
     //Recipients
     $mail->setFrom('no-reply@bttbh.ba', 'BTT');
     $mail->addAddress($emailSign);     // Add a recipient
-          // Name is optional
+    // Name is optional
     /* $mail->addReplyTo('info@example.com', 'Information');
     $mail->addCC('cc@example.com');
     $mail->addBCC('bcc@example.com');
      */
     //Attachments
-     /*$mail->addAttachment('/var/tmp/file.tar.gz');           // Add attachments
+    /*$mail->addAttachment('/var/tmp/file.tar.gz');           // Add attachments
     $mail->addAttachment('images/icon.png', 'BTT logo');  */ // Optional name
     //Content 
     $mail->isHTML(true);                                  // Set email format to HTML
@@ -52,11 +52,11 @@ try {
             </div>
         </div>
         <div style="font-size: 20px;margin-top:10px;">
-            First of all, we want to thank You for creating account at <a href="http://bttbh.ba" style="color:gold; text-decoration:none;">BTTBH.BA</a>
+            First of all, we want to thank You for creating account at <a href="https://bttbh.ba" style="color:gold; text-decoration:none;">BTTBH.BA</a>
         </div>
         <div style="font-size: 20px;">
             Before You can login with your account information, please click on link below to verify your email address<br>
-            http://bttbh.ba/verify.php?email=' . $emailSign . '
+            https://bttbh.ba/verify.php?email=' . $emailSign . '
         </div>
     </center> 
     <div style="color: red; font-size: 16px; margin-top: 10px;">
@@ -65,12 +65,12 @@ try {
      <br>';
     $mail->AltBody = ' This is the body in plain text for non - HTML mail clients ';
 
-    
+
     //echo ' Message has been sent < br > ';
 
     $_SESSION[' url '] = $_SERVER[' HTTP_REFERER '];
     if (isset($_SESSION[' url '])) {
-        if ($_SESSION[' url '] != ' http://bttbh.ba/myCart.php')
+        if ($_SESSION[' url '] != ' https://bttbh.ba/myCart.php')
             $url = $_SESSION['url'];
         else
             $url = "index.php";
@@ -79,7 +79,7 @@ try {
     }
     //echo $url;
 
-    
+
     header("location: index.php");
     $mail->send();
 } catch (Exception $e) {
