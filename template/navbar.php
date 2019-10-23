@@ -274,16 +274,22 @@ session_start();
 
 <script src="./loginRegister/login.js"></script>
 
-<!-- TREBA URADITI DA SE POJAVI NAVBAR KADA SE PRESTANE SKROLATI A NE NA SCROLL UP-->
 <script>
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
+
         var currentScrollPos = window.pageYOffset;
+
         if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
+            $('#navbar').css("top", 0)
         } else {
-            document.getElementById("navbar").style.top = "-160px";
+            $('#navbar').css("top", "-160px")
         }
         prevScrollpos = currentScrollPos;
+
+        clearTimeout($.data(this, 'scrollTimer'));
+        $.data(this, 'scrollTimer', setTimeout(function() {
+            $('#navbar').css("top", 0)
+        }, 350));
     }
 </script>
