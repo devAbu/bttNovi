@@ -192,9 +192,26 @@ a.dropdown-item {
     width: 100%;
 }
 
+.instFooter{
+    margin-left: 32px;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 410px) {
     #makeTour {
         margin-left: -30px;
+    }
+
+    .h4 {
+        display: none;
+    }
+
+    .instFooter{
+        margin-left: 0;
+    }
+
+    .display-4{
+        font-size: 2rem !important
     }
 }
 
@@ -466,7 +483,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
     .textFooter {
-        margin-left: 25%;
+        margin-left: 15%;
     }
 }
 
@@ -486,9 +503,9 @@ footer {
     display: none;
 }
 
-#vh {
-    width: 100vw;
-    height: 72vh;
+.vh {
+    width: 100vw !important;
+    height: 72vh !important;
 }
 
 .pass {

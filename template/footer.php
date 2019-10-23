@@ -25,11 +25,11 @@
     </style>
  </head>
  
- <footer style="background-color:#9aa6af"> <!--class="bg-secondary"-->
+ <footer style="background-color:#747778">
         <div class="row no-gutters">
             <div class="col-md-6 col-sm-12 col-12 mt-5">
-                <img src="images/btt logo png.png" alt="logo" class="img-fluid ml-2 logo" width="170" height="170"/>
-                <label class="text-uppercase text-center text-warning h1" style="opacity:0.7;">Bosnian Tourist Travel</label>
+                <img src="images/btt logo png.png" alt="logo" class="img-fluid ml-sm-2 logo offset-3 offset-sm-0" width="170" height="170"/>
+                <label class="text-uppercase text-center text-warning h1 ml-sm-4" style="opacity:0.7;">Bosnian Tourist Travel</label>
                 <div class="col-10">
                 <p class="text-dark mt-4 textFooter" style="max-width:400px; ">Home to medieval villages, rivers and lakes, plus the craggy Dinaric Alps, and many more, explore our Country.</p>
                 </div>
@@ -39,35 +39,35 @@
                 </p>
                 </div>
             </div>
-            <div class="col-md-5 col-sm-12 col-xs-12 mt-5 offset-md-1">
-                <h1 class="text-warning mb-5 text-uppercase" style="margin-top:13px !important; opacity:0.7;">Contact info</h1>
+            <div class="col-md-5 col-sm-12 col-xs-12 mt-5 offset-md-1 ml-3">
+                <h1 class="text-warning mb-sm-5 text-uppercase " style="margin-top:13px !important; opacity:0.7;">Contact info</h1>
                 <ul class="list-group list-group-flush" style=" border:none;">
-                    <li class="list-group-item text-warning  mt-4" style="background-color: #9aa6af">Address:
+                    <li class="list-group-item text-warning  mt-4" style="background-color: #747778">Address:
                         <span class="ml-lg-5 ml-md-0 ml-sm-5" id="footerAddress">
                             <a href="#" id="map" data-toggle="modal" class="text-warning" data-target="#map7" style="text-decoration:none;">
-                                <i class="fas fa-map-marker mr-2"></i>Grada Bakua 11, Sarajevo, B&H</a>
+                                <i class="fas fa-map-marker mr-2"></i>Grada Bakua 11, Sarajevo</a>
                         </span>
                     </li>
-                    <li class="list-group-item text-warning " style="background-color: #9aa6af">Phone:
+                    <li class="list-group-item text-warning " style="background-color: #747778">Phone:
                         <span style="margin-left:60px;">
                             <a href="tel:+38761091675" class="text-warning" style="text-decoration:none;">
                                 <i class="fas fa-phone mr-2"></i>(+387)61 091 675</a>
                         </span>
                     </li>
-                    <li class="list-group-item text-warning " style="background-color: #9aa6af">E-mail:
+                    <li class="list-group-item text-warning " style="background-color: #747778">E-mail:
                         <span  id="footerEmail">
                             <a href="mailto:abdulrahman.almonajed@gmail.com" style="text-decoration:none;" class="text-warning">
                                 <i class="far fa-envelope mr-2"></i>abdulrahman.almonajed@gmail.com</a>
                         </span>
                     </li>
-                    <li class="list-group-item text-warning " style="background-color: #9aa6af">
+                    <li class="list-group-item text-warning " style="background-color: #747778">
                         Visit us on:
-                        <a href="https://www.instagram.com/bosnian_tourist_travel/" target="_blank" class="text-warning " style="margin-left:32px !important; text-decoration:none;">
+                        <a href="https://www.instagram.com/bosnian_tourist_travel/" target="_blank" class="text-warning instFooter">
                             <i class="fab fa-instagram mr-2" aria-hidden="true"></i>Instagram</a>
                         <a href="https://www.facebook.com" target="_blank" class="text-warning ml-4" style="text-decoration:none;">
                             <i class="fab fa-facebook mr-2" aria-hidden="true"></i>Facebook</a>
                     </li>
-                    <li class="list-group-item" style="background-color: #9aa6af"></li>
+                    <li class="list-group-item" style="background-color: #747778"></li>
                 </ul>
             </div>
             <div class="col-12 text-center text-dark mt-3">

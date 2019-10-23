@@ -1,7 +1,7 @@
 <?php
 session_start();
 ?>
-<nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="navbar" style="opacity:0.95; font-size:18px; background-color:#9aa6af;">
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="navbar" style="opacity:0.95; font-size:18px; background-color:#c0c8cf;">
     <a href="index.php" class="navbar-brand">
         <img src="images/btt logo png.png" alt="logo" class="img-fluid mr-sm-3 logo" width="45" height="45" />
         <span class="h4">BTT</span>
