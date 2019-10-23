@@ -101,7 +101,7 @@ session_start();
             $count = $result->num_rows;
             if ($count > 0) {
                 while ($row = $result->fetch_assoc()) {
-                    echo '<form action = "delete/deleteTour.php" method = "POST"><div class="card text-center mt-4 ">
+                    echo '<div class="myContainer"><form action = "delete/deleteTour.php" method = "POST"><div class="card text-center mt-4 ">
             <div class="card-header text-success h3 text-uppercase ">' .
                         $row["type"] . '
             </div>
@@ -205,12 +205,12 @@ session_start();
                 <small class="text-muted ">
                     <i class="far fa-clock mr-2 "></i> ' . $row["days"] . '</small>
             </div>
-            </div></form>
+            </div></form></div>
             ';
                 }
             } else {
                 echo '<div class=text-center>
-            <h2>No selected tour plans!!! <a href="tourPlans.php" style="color: gold;">Click here</a> to see and choose tour plan</h2>
+            <h2>No selected tour plans! <a href="tourPlans.php" style="color: gold;">Click here</a> to see and choose tour plan</h2>
         </div>';
             }
         }
@@ -233,7 +233,7 @@ session_start();
             $count = $result->num_rows;
             if ($count > 0) {
                 while ($row = $result->fetch_assoc()) {
-                    echo '<form action = "delete/deleteApartment.php" method = "POST"><div class="card text-center mt-4 ">
+                    echo '<div class="myContainer"><form action = "delete/deleteApartment.php" method = "POST"><div class="card text-center mt-4 ">
 
             <input type="text" value=" ' . $session . '  "  name="session" id="session" hidden>
             <input type="text" value=" ' . $row["ID"] . ' "  name="apartmentID" id="apartmentID" hidden>
@@ -321,12 +321,12 @@ session_start();
                 <small class="text-muted ">
                     <i class="fa  fa-map-marker mr-2"></i> ' . $row["place"] . '</small>
             </div>
-            </div></form>
+            </div></form></div>
             ';
                 }
             } else {
                 echo '<div class=text-center>
-            <h2>No apartment selected!!! <a href="apartment.php" style="color: gold;">Click here</a> to see and reserve an apartment</h2>
+            <h2>No apartment selected! <a href="apartment.php" style="color: gold;">Click here</a> to see and reserve an apartment</h2>
         </div>';
             }
         }
@@ -346,7 +346,7 @@ session_start();
             $count = $result->num_rows;
             if ($count > 0) {
                 while ($row = $result->fetch_assoc()) {
-                    echo '<form action = "delete/deleteHotel.php" method = "POST"><div class="card text-center mt-4 ">
+                    echo '<div class="myContainer"><form action = "delete/deleteHotel.php" method = "POST"><div class="card text-center mt-4 ">
 
             <input type="text" value=" ' . $session . '  "  name="session" id="session" hidden>
             <input type="text" value=" ' . $row["ID"] . ' "  name="hotelID" id="hotelID" hidden>
@@ -417,12 +417,12 @@ session_start();
                 <small class="text-muted ">
                     <i class="fa  fa-map-marker mr-2"></i> ' . $row["place"] . '</small>
             </div>
-            </div></form>
+            </div></form></div>
             ';
                 }
             } else {
                 echo '<div class=text-center>
-            <h2>No hotel selected!!! <a href="hotel.php" style="color: gold;">Click here</a> to see and reserve a hotel</h2>
+            <h2>No hotel selected! <a href="hotel.php" style="color: gold;">Click here</a> to see and reserve a hotel</h2>
         </div>';
             }
         }
@@ -444,7 +444,7 @@ session_start();
                     if ($row["driver"] == 'yes') {
                         $row["price"] += 40;
                     }
-                    echo '<form action = "delete/deleteCar.php"><div class="card text-center mt-4 ">
+                    echo '<div class="myContainer"><form action = "delete/deleteCar.php"><div class="card text-center mt-4 ">
             <div class="card-header text-success h3 text-uppercase ">' .
                         $row["title"] . '
             </div>
@@ -537,12 +537,12 @@ session_start();
                 </div>
             </div>
 
-            </div></form>
+            </div></form></div>
             ';
                 }
             } else {
                 echo '<div class=text-center>
-            <h2>No car selected!!! <a href="rent.php" style="color: gold;">Click here</a> to see and rent a car</h2>
+            <h2>No car selected! <a href="rent.php" style="color: gold;">Click here</a> to see and rent a car</h2>
         </div>';
             }
         }
@@ -793,7 +793,7 @@ onAuthorize: function (data, actions) {
                 }
             } else {
                 echo '<div class=text-center>
-            <h2>No requested tour !!! <a href="makeTour.php" style="color: gold;">Click here</a> to request one.</h2>
+            <h2>No requested tour ! <a href="makeTour.php" style="color: gold;">Click here</a> to request one.</h2>
         </div>';
             }
         }
@@ -930,7 +930,7 @@ onAuthorize: function (data, actions) {
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-12">
-                            <p style="font-size:2vw; margin: 0px;" class="text-center text-primary">THANKS FOR YOUR RESERVATION!!!</h2>
+                            <p style="font-size:2vw; margin: 0px;" class="text-center text-primary">THANKS FOR YOUR RESERVATION.</h2>
                         </div>
                     </div>
                 </div>

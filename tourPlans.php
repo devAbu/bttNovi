@@ -384,9 +384,9 @@ echo $where;*/
                         continue;
                     }
 
-                    echo '<div class="myDIV">
+                    echo '<div class="myDIV myContainer">
                 <form action = "userAll/userTour.php" method = "POST"><div class="card text-center mt-4 myDIV">
-            <div class="card-header text-primary h3 text-uppercase " style="background-image: linear-gradient(#53a5ed,#ffffff ) !important;">' .
+            <div class="card-header text-primary h3 text-uppercase " style="background-image: linear-gradient(#c5ccd8,#ffffff ) !important;">' .
                         $row["type"] . '
             </div>
 
@@ -542,7 +542,7 @@ echo $where;*/
             
                 <input type="button" onclick="feedClick(id)" class="btn btn-success mt-3 mb-3" value="Send" id="tourFeedbackSend' . $row["ID"] . '" >      
             </div>
-            <div class="card-footer text-muted" style="background-image: linear-gradient(#ffffff, #53a5ed ) !important;">
+            <div class="card-footer text-muted" style="background-image: linear-gradient(#ffffff, #c5ccd8 ) !important;">
                 <span class="text-muted ">
                     <i class="far fa-clock mr-2 "></i> Tour length: ' . $row["days"] . '</span>
             </div>
@@ -558,7 +558,7 @@ echo $where;*/
                     if ($row['ID'] == 0) {
                         continue;
                     }
-                    echo '<div class="myDIV">
+                    echo '<div class="myDIV myContainer">
                 <form action = "userAll/userTour.php" method = "POST"><div class="card text-center mt-4">
             <div class="card-header text-primary h3 text-uppercase" id="tureHead" style="background-image: linear-gradient(#c5ccd8,#ffffff ) !important;">' .
                         $row["type"] . '

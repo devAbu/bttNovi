@@ -84,7 +84,7 @@ if (isset($_REQUEST['Message'])) {
             <a href="https://www.facebook.com/tourAgencyBTT/" target="_blank" class="btn btn-lg btn-primary mb-1">
                 <i class="fab fa-facebook mr-2" aria-hidden="true"></i>Facebook</a>
             <div class="align-text-bottom">
-            <a href="#res" id="downArrow"><i class="fas fa-chevron-down fa-7x" id="test" style="color: #007BFF;"></i></a>
+                <a href="#res" id="downArrow"><i class="fas fa-chevron-down fa-7x" id="test" style="color: #007BFF;"></i></a>
             </div>
         </div>
     </section>
@@ -167,7 +167,7 @@ if (isset($_REQUEST['Message'])) {
                         continue;
                     }
 
-                    echo '<div class="myDIV">
+                    echo '<div class="myDIV myContainer">
             
             <form action = "userAll/userCar.php" ><div class="card text-center mt-4 ">
             <div class="card-header text-primary h3 text-uppercase ">' .
@@ -282,7 +282,7 @@ if (isset($_REQUEST['Message'])) {
 
                     if ($row['driver'] == 'With driver') {
 
-                        echo '<div class="myDIV driver"><form action = "userAll/userCar.php"><div class="card text-center mt-4 ">
+                        echo '<div class="myDIV driver myContainer"><form action = "userAll/userCar.php"><div class="card text-center mt-4 ">
           <div class="card-header text-primary h3 text-uppercase ">' .
                             $row["title"] . '
           </div>
@@ -353,7 +353,7 @@ if (isset($_REQUEST['Message'])) {
                     }
 
                     if ($row['driver'] == 'Without driver') {
-                        echo '<div class="myDIV noDriver"><form action = "userAll/userCar.php"><div class="card text-center mt-4 ">
+                        echo '<div class="myDIV noDriver myContainer"><form action = "userAll/userCar.php"><div class="card text-center mt-4 ">
           <div class="card-header text-primary h3 text-uppercase ">' .
                             $row["title"] . '
           </div>
@@ -425,7 +425,7 @@ if (isset($_REQUEST['Message'])) {
 
                     if ($row['driver'] == 'With driver' && $row['driver'] == 'Without driver') {
 
-                        echo '<div class="myDIV all"><form action = "userAll/userCar.php"><div class="card text-center mt-4 ">
+                        echo '<div class="myDIV myContainer all"><form action = "userAll/userCar.php"><div class="card text-center mt-4 ">
           <div class="card-header text-primary h3 text-uppercase ">' .
                             $row["title"] . '
           </div>

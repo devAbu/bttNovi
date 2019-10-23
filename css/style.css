@@ -192,7 +192,7 @@ a.dropdown-item {
     width: 100%;
 }
 
-.instFooter{
+.instFooter {
     margin-left: 32px;
     text-decoration: none;
 }
@@ -206,11 +206,11 @@ a.dropdown-item {
         display: none;
     }
 
-    .instFooter{
+    .instFooter {
         margin-left: 0;
     }
 
-    .display-4{
+    .display-4 {
         font-size: 2rem !important
     }
 }
@@ -596,4 +596,9 @@ label.error {
         width: auto;
         height: auto;
     }
+}
+
+.myContainer {
+    margin-left: 5vw;
+    margin-right: 5vw;
 }

@@ -219,7 +219,7 @@ if (isset($_REQUEST['Message'])) {
                     if ($row['ID'] == 0) {
                         continue;
                     }
-                    echo '<div class="myDIV"><form action = "userAll/userApartment.php" method = "POST"><div class="card text-center mt-4 ">
+                    echo '<div class="myDIV myContainer"><form action = "userAll/userApartment.php" method = "POST"><div class="card text-center mt-4 ">
 
             <input type="text" value=" ' . $session . '  "  name="session" id="session" hidden>
             <input type="text" value=" ' . $row["ID"] . ' "  name="idnum" id="idnum" hidden>
@@ -316,7 +316,7 @@ if (isset($_REQUEST['Message'])) {
                         continue;
                     }
                     echo '
-                <div class="myDIV">
+                <div class="myDIV myContainer">
                 <form action = "userAll/userApartment.php" method = "POST"><div class="card text-center mt-4 ">
 
           <input type="text" value=" ' . $row["ID"] . ' "  name="idnum" id="idnum" hidden>

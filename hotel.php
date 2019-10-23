@@ -79,7 +79,7 @@ session_start();
             <a href="https://www.facebook.com/tourAgencyBTT/" target="_blank" class="btn btn-lg btn-primary mb-1">
                 <i class="fab fa-facebook mr-2" aria-hidden="true"></i>Facebook</a>
             <div class="align-text-bottom">
-            <a href="#res" id="downArrow"><i class="fas fa-chevron-down fa-7x" id="test" style="color: #007BFF;"></i></a>
+                <a href="#res" id="downArrow"><i class="fas fa-chevron-down fa-7x" id="test" style="color: #007BFF;"></i></a>
             </div>
         </div>
     </section>
@@ -326,7 +326,8 @@ session_start();
                     if ($row['ID'] == 0) {
                         continue;
                     }
-                    echo '<div class="myDIV"><form action = "userAll/userHotel.php" method = "POST"><div class="card text-center mt-4 ">
+                    echo '
+                    <div class="myDIV myContainer"><form action = "userAll/userHotel.php" method = "POST"><div class="card text-center mt-4 ">
 
             <input type="text" value=" ' . $session . '  "  name="session" id="session" hidden>
             <input type="text" value=" ' . $row["ID"] . ' "  name="idnum" id="idnum" hidden>
@@ -424,7 +425,7 @@ session_start();
                         continue;
                     }
 
-                    echo '<div class="myDIV"><form action = "userAll/userHotel.php" method = "POST"><div class="card text-center mt-4 ">
+                    echo '<div class="myDIV myContainer"><form action = "userAll/userHotel.php" method = "POST"><div class="card text-center mt-4 ">
 
           <input type="text" value=" ' . $row["ID"] . ' "  name="idnum" id="idnum" hidden>
           <input type="text" value=" ' . $count . ' "  name="count" id="count" hidden>
@@ -468,7 +469,7 @@ session_start();
                   <i class="fa  fa-map-marker mr-2"></i> Location: ' . $row["place"] . '</span>
           </div>
           </div>
-          </div></form>
+          </div<div></form>
           ';
                 }
             }
