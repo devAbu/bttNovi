@@ -281,5 +281,19 @@ session_start();
             });
         })
     </script>
-
+ 
 <script src="./loginRegister/login.js"></script>
+
+<!-- TREBA URADITI DA SE POJAVI NAVBAR KADA SE PRESTANE SKROLATI A NE NA SCROLL UP-->
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  }else {
+    document.getElementById("navbar").style.top = "-160px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
