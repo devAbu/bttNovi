@@ -1,4 +1,7 @@
-body { padding-right: 0 !important }
+body {
+    padding-right: 0 !important
+}
+
 .jumbotron {
     background-image: url('../images/jumbotron.jpg');
     background-size: cover;
@@ -26,15 +29,18 @@ a.dropdown-item {
 .navbar-dark .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, 1) !important;
 }
-#navbar{
+
+#navbar {
     background-color: transparent;
     background: transparent;
     border-color: transparent;
+    padding-right: 15px !important;
 }
 
 .btn-light {
     border: 1px solid #efefef !important;
 }
+
 #bg {
     background-image: url('../images/bg.png');
     background-size: cover;
@@ -480,7 +486,7 @@ footer {
     display: none;
 }
 
-#vh{
+#vh {
     width: 100vw;
     height: 72vh;
 }
@@ -566,7 +572,7 @@ label.error {
 
 .logo {
     filter: brightness(2.0);
-}   
+}
 
 @media only screen and (max-width: 1255px) {
     #bestPlaceImg {

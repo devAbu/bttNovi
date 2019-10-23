@@ -150,8 +150,8 @@ session_start();
                     </p>
                 </li>
             </ul>
-            <!--TODO: uradit change date-->
-             <ul class="navbar-nav ml-auto selectTour" style="float:right; margin-top:-100px;">
+            
+            <ul class="navbar-nav ml-auto selectTour" style="float:right; margin-top:-100px;">
                 <li class="list-group-item" style="border:none;">
                     <a href="#" data-toggle="modal" data-target="#confirmTour">
                         <input type="button" name="select" id="select" class="btn btn-danger " value="Delete " style="width:100px; " />
@@ -295,7 +295,7 @@ session_start();
                 </li>
                 
             </ul>-->
-            <!--TODO: uradit change date-->
+            
             </div>
 
             <div class="modal fade" id="confirmApartment" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -499,7 +499,7 @@ session_start();
                     </a>
                 </li>
             </ul>
-<!--TODO: uradit change date-->
+
             <!--<ul class="list-group list-group-flush mr-5 " style=" border:none;float:right; margin-top:-100px; ">
                  <li class="list-group-item text-warning mt-4 " style="border:none; ">
                     <p class="card-text "></p>
