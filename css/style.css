@@ -1,5 +1,9 @@
 body {
-    padding-right: 0 !important
+    padding-right: 0 !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .jumbotron {
@@ -601,4 +605,29 @@ label.error {
 .myContainer {
     margin-left: 5vw;
     margin-right: 5vw;
+}
+
+.socialJumbotronButton {
+    text-decoration: none !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+
+.socialJumbotronButton:before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(209, 202, 202, 0.4),
+            transparent) !important;
+    transition: all .8s !important;
+}
+
+.socialJumbotronButton:hover:before {
+    left: 100% !important;
 }

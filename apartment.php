@@ -83,9 +83,9 @@ if (isset($_REQUEST['Message'])) {
             <p class="display-4 d-none d-sm-block">Bosnian Tourist Travel</p>
             <p class="lead text-uppercase text-primary" style="font-size:30px;">Choose the best hotel for your need!</p>
             <p class=" h5 mb-3">Visit us on:</p>
-            <a href="https://www.instagram.com/bosnian_tourist_travel/" target="_blank" class="btn btn-lg btn-primary mb-1">
+            <a href="https://www.instagram.com/bosnian_tourist_travel/" target="_blank" class="btn btn-lg btn-primary mb-1 socialJumbotronButton">
                 <i class="fab fa-instagram mr-2" aria-hidden="true"></i>Instagram</a>
-            <a href="https://www.facebook.com/tourAgencyBTT/" target="_blank" class="btn btn-lg btn-primary mb-1">
+            <a href="https://www.facebook.com/tourAgencyBTT/" target="_blank" class="btn btn-lg btn-primary mb-1 socialJumbotronButton">
                 <i class="fab fa-facebook mr-2" aria-hidden="true"></i>Facebook</a>
             <div class="align-text-bottom">
                 <a href="#res" id="downArrow"><i class="fas fa-chevron-down fa-7x" id="test" style="color: #007BFF;"></i></a>

@@ -67,8 +67,8 @@ session_start();
             <p class="display-4 d-none d-sm-block" style="text-shadow: 3px 3px black;">Bosnian Tourist Travel</p>
             <p class="lead text-uppercase" style="font-size:40px; color:gold;" style="text-shadow: 3px 4px black;">What we have to offer</p>
             <p class=" h5 mb-3" style="text-shadow: 2px 2px black;">Visit us on:</p>
-            <a href="https://www.instagram.com/bosnian_tourist_travel/" target="_blank" class="btn btn-lg btn-primary mb-1"><i class="fab fa-instagram mr-2" aria-hidden="true"></i>Instagram</a>
-            <a href="https://www.facebook.com/tourAgencyBTT/" target="_blank" class="btn btn-lg btn-primary mb-1"><i class="fab fa-facebook mr-2" aria-hidden="true"></i>Facebook</a>
+            <a href="https://www.instagram.com/bosnian_tourist_travel/" target="_blank" class="btn btn-lg btn-primary mb-1 socialJumbotronButton"><i class="fab fa-instagram mr-2" aria-hidden="true"></i>Instagram</a>
+            <a href="https://www.facebook.com/tourAgencyBTT/" target="_blank" class="btn btn-lg btn-primary mb-1 socialJumbotronButton"><i class="fab fa-facebook mr-2" aria-hidden="true"></i>Facebook</a>
             <div class="align-text-bottom">
                 <a href="#res" id="downArrow"><i class="fas fa-chevron-down fa-7x" id="test" style="color: #007BFF;"></i></a>
             </div>

@@ -93,9 +93,9 @@ session_start();
             <p class="lead mt-5 mb-3">Visit Bosnia & Herzegovina with us!</p>
             <p class="lead ml-4">The best offers and price!</p>
             <p class="text-primary h5 mb-3 ml-4">Visit us on:</p>
-            <a href="https://www.instagram.com/bosnian_tourist_travel/" class="btn btn-lg btn-primary mb-1">
+            <a href="https://www.instagram.com/bosnian_tourist_travel/" class="btn btn-lg  btn-primary mb-1 socialJumbotronButton">
                 <i class="fab fa-instagram mr-2" aria-hidden="true"></i>Instagram</a>
-            <a href="https://www.facebook.com/tourAgencyBTT/" class="btn btn-lg btn-primary mb-1 ml-0 ml-sm-3 ">
+            <a href="https://www.facebook.com/tourAgencyBTT/" class="btn btn-lg btn-primary mb-1 ml-0 ml-sm-3 socialJumbotronButton">
                 <i class="fab fa-facebook mr-2" aria-hidden="true"></i>Facebook</a>
             <div>
                 <a href="tourPlans.php" class="text-warning" style="text-decoration: none;">
